@@ -1,6 +1,6 @@
 const Dlang = require('discordbot-script')
 const bot = new Dlang({
- token: "NzMyMzgxMTY5OTYxOTI2NjU3.XwzxHQ.9U7S8dX8rJBsqUrToqQKCjuVtGI",
+ token: "TOKEN",
  prefix: ["BX!"]
 })
  
@@ -9,7 +9,7 @@ bot.MessageEvent()
 const dbd = require("dbd.js")
 
 const bdfd = new dbd.Bot({
-token: "NzMyMzgxMTY5OTYxOTI2NjU3.XwzxHQ.9U7S8dX8rJBsqUrToqQKCjuVtGI", 
+token: "TOKEN", 
 prefix: "BX!", 
 dbhToken: "danbot-4dfn2"     
 })
