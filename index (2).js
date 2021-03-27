@@ -1,4 +1,10 @@
-require('dotenv').config()
+const result = dotenv.config()
+
+if (result.error) {
+  throw result.error
+}
+
+console.log(result.parsed)
 const Dlang = require('discordbot-script')
 const bot = new Dlang({
  token: process.env.TOKEN,
