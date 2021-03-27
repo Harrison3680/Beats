@@ -14,5 +14,6 @@
   "dependencies": {
     "dbd.js": "^2.2.6",
     "discordbot-script": "2.5.0"
+    "dotenv": "8.2.0"
   }
 }
