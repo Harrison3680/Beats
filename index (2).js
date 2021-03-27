@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Dlang = require('discordbot-script')
 const bot = new Dlang({
  token: "TOKEN",
