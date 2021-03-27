@@ -1,4 +1,3 @@
-const result = dotenv.config()
 const Dlang = require('discordbot-script')
 const bot = new Dlang({
  token: process.env.TOKEN,
