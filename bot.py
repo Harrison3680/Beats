@@ -1,1 +1,1 @@
-
+print('Console is cleared')
