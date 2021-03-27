@@ -215,7 +215,7 @@ bot.Command({
 	name:`mine`,
 	code:`$setVar[Gems;$sum[$getVar[Gems;$authorID];$random[5;10]];$authorID]
 $title[Mining Away UwU]
-$description[You mined and got $random[5;10]]
+$description[You mined and got $random[5;15]]
 $color[RANDOM]
 $globalCooldown[1h;You can mine again in {time}]
 $footer[Executed in $ping ms | executed by $username[$authorID]]
