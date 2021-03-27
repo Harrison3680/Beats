@@ -1,7 +1,7 @@
 require('dotenv').config()
 const Dlang = require('discordbot-script')
 const bot = new Dlang({
- token: "TOKEN",
+ token: process.env.TOKEN,
  prefix: ["BX!"]
 })
  
@@ -10,7 +10,7 @@ bot.MessageEvent()
 const dbd = require("dbd.js")
 
 const bdfd = new dbd.Bot({
-token: "TOKEN", 
+token: process.env.TOKEN, 
 prefix: "BX!", 
 dbhToken: "danbot-4dfn2"     
 })
