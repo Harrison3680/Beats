@@ -2,9 +2,9 @@
   "name": "BeatsX",
   "version": "1.0.1",
   "description": "An awesome discord bot",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "engines": {
     "node": "12.x"
@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "dbd.js": "^2.2.6",
-    "discordbot-script": "2.5.0"
+    "discordbot-script": "2.5.0",
     "dotenv": "8.2.0"
   }
 }
