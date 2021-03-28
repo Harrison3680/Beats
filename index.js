@@ -44,6 +44,12 @@ bot.Variables({
 	
 })
 
+bot.status({
+  text: "Ping: $ping ms",
+  type: "PLAYING",
+  time: 12
+})
+
 bdfd.command({
   name:"help",
   code:`
