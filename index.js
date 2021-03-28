@@ -44,7 +44,7 @@ bot.Variables({
 	
 })
 
-bot.status({
+bdfd.status({
   text: "Ping: $ping ms",
   type: "PLAYING",
   time: 12
