@@ -1,10 +1,31 @@
-const Dlang = require('discordbot-script')
+const Dlang = require('discordbot-script');
+const exec = require("child_process").exec;
 const bot = new Dlang({
  token: process.env.TOKEN,
  prefix: ["BX!"]
 })
  
 bot.MessageEvent()
+
+    update()
+    async function update() {
+        exec(`git pull origin master`, (error, stdout) => {
+            let response = error || stdout;
+            if (!error) {
+              if (response.includes("Already up to date.")) {
+              } else {
+            
+                setTimeout(() => {
+                    process.exit();
+                }, 1000);
+
+              }
+            }
+          });
+    }
+  setInterval(function() {
+      update()
+  }, 60 * 1000);
 
 const dbd = require("dbd.js")
 
