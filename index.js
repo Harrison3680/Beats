@@ -1,6 +1,5 @@
 const Dlang = require('discordbot-script');
 const exec = require("child_process").exec;
-global.config = require("./config.json");
 const bot = new Dlang({
  token: config.TOKEN,
  prefix: ["BX!"]
