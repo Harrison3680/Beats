@@ -100,13 +100,13 @@ $addField[Versions;
 • DBD.js Version: $packageVersion
 • DB-Script Version: 2.5.0]
 $addField[Hosting Related Stats;
-• :CPU: CPU Usage: $cpu%
-• :CPU: CPU Model: $djsEval[require ('os').cpus()[0\\].model;yes] 
-• :CPU: CPU Platform: $djsEval[require ('os').platform;yes]
-• :MEMORY: Free Memory: $abbreviate[$djsEval[require ('os').freemem();yes]] Bytes 
-•  :MEMORY: Total Memory: $abbreviate[$djsEval[require ('os').totalmem;yes]] Bytes
-• :RAM: RAM Usage: $ram MB
-• MEMORY: Memory Usage: $round[$djsEval[process.memoryUsage().rss / 1024 / 1024;yes]] MB]
+• CPU Usage: $cpu%
+• CPU Model: $djsEval[require ('os').cpus()[0\\].model;yes] 
+• CPU Platform: $djsEval[require ('os').platform;yes]
+• Free Memory: $abbreviate[$djsEval[require ('os').freemem();yes]] Bytes 
+•  Total Memory: $abbreviate[$djsEval[require ('os').totalmem;yes]] Bytes
+•  RAM Usage: $ram MB
+•  Memory Usage: $round[$djsEval[process.memoryUsage().rss / 1024 / 1024;yes]] MB]
  $djseval[d.object.nodev = process.version
 d.object.discordv = require('discord.js').version
 $createObject[{}]]
