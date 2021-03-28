@@ -279,7 +279,8 @@ $channelCount
 **Creation Date**
 $creationDate[$guildID]]
 $color[73C2FB]
-$addCmdReactions[✅] `
+$addCmdReactions[✅] 
+$image[https://i.ibb.co/rFwpMCp/ranbom.gif]`
 })
 
 bdfd.command({
