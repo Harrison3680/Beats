@@ -1,7 +1,8 @@
 const Dlang = require('discordbot-script');
 const exec = require("child_process").exec;
+global.config = require("./config.json");
 const bot = new Dlang({
- token: process.env.TOKEN,
+ token: config.TOKEN,
  prefix: ["BX!"]
 })
  
@@ -30,7 +31,7 @@ bot.MessageEvent()
 const dbd = require("dbd.js")
 
 const bdfd = new dbd.Bot({
-token: process.env.TOKEN, 
+token: config.TOKEN, 
 prefix: "BX!", 
 dbhToken: "danbot-4dfn2"     
 })
