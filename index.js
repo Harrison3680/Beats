@@ -59,7 +59,8 @@ $description[stats - shows bot statistics
 changes/CL - shows things modified in the bot
 work - work for cash
 mine - mine for gems
-daily - gives you daily money
+daily - gives your daily money
+gdaily - claim your daily gems
 weekly - weekly cash
 hack - hack for cash
 bal - shows your balance
@@ -218,7 +219,7 @@ bot.Command({
 	code: `$setVar[Cash;$sum[$getVar[Cash;$authorID];$random[500;650]];$authorID]
 $setVar[Gems;$sum[$getVar[Gems;$authorID];$random[5;10]];$authorID]
 $title[DAILY UwU]
-$description[You claimed your daily and got $$random[500;650] and $random[5;10]
+$description[You claimed your daily and got $$random[500;650]
 $color[RANDOM]
 $globalCooldown[24h;You can claim again in {time}]
 $footer[Executed in $ping ms | executed by $username[$authorID]]
@@ -226,6 +227,21 @@ $addTimestamp
 $addCmdReactions[✅]
 $image[https://i.ibb.co/rFwpMCp/ranbom.gif]`
 })
+
+bot.Command({
+	name: `gdaily`,
+	code: `$setVar[Gems;$sum[$getVar[Gems;$authorID];$random[10;20]];$authorID]
+$setVar[Gems;$sum[$getVar[Gems;$authorID];$random[5;10]];$authorID]
+$title[GEM DAILY UwU]
+$description[You claimed your daily and got $$random[10;20]
+$color[RANDOM]
+$globalCooldown[24h;You can claim again in {time}]
+$footer[Executed in $ping ms | executed by $username[$authorID]]
+$addTimestamp
+$addCmdReactions[✅]
+$image[https://i.ibb.co/rFwpMCp/ranbom.gif]`
+})
+
 
 bot.Command({
 	name: `weekly`,
