@@ -229,21 +229,6 @@ $image[https://i.ibb.co/rFwpMCp/ranbom.gif]`
 })
 
 bot.Command({
-	name: `gdaily`,
-	code: `$setVar[Gems;$sum[$getVar[Gems;$authorID];$random[10;20]];$authorID]
-$setVar[Gems;$sum[$getVar[Gems;$authorID];$random[5;10]];$authorID]
-$title[GEM DAILY UwU]
-$description[You claimed your daily and got $$random[10;20]
-$color[RANDOM]
-$globalCooldown[24h;You can claim again in {time}]
-$footer[Executed in $ping ms | executed by $username[$authorID]]
-$addTimestamp
-$addCmdReactions[✅]
-$image[https://i.ibb.co/rFwpMCp/ranbom.gif]`
-})
-
-
-bot.Command({
 	name: `weekly`,
 	code: `$setVar[Cash;$sum[$getVar[Cash;$authorID];$random[700;900]];$authorID]
 $title[Weekly UwU]
