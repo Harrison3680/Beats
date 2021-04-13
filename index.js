@@ -339,14 +339,14 @@ $addCmdReactions[✅]`
 bdfd.command({
     name:"Deval",
     code:`$djsEval[$message;yes]
-$omlyForIDs[634860829132455937;you're not a bot developer]
+$onlyForIDs[634860829132455937;you're not a bot developer]
 $addCmdReactions[✅]`
 })
 
 bdfd.command({
     name:"eval",
     code:`$eval[$message;yes]
-$omlyForIDs[634860829132455937;you're not a bot developer]
+$onlyForIDs[634860829132455937;you're not a bot developer]
 $addCmdReactions[✅]`
 })
 
